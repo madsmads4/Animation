@@ -43,7 +43,7 @@
     /*animation-delay: 1s;*/
     }
 
-
+ /* retelse */
     @keyframes movebox-b{
         0%{
             transform: translateX(0px) translateY(0px);
