@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Transition eksempel */
+
+.box1{
+    margin-top: 20px;
+    Width: 100px;
+    Height: 100px;
+    Background: #6716d9;
+    animation-name: movebox-a;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    /*animation-delay: 1s;*/
+    }
+
+@keyframes movebox-a{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    25%{
+        transform: translateX(1000px) translateY(0px);
+    }
+    50%{
+        transform: translateX(1000px) translateY(500px);
+    }
+    75%{
+        transform: translateX(0px) translateY(500px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+.box2{
+    margin-top: -100px;
+    Width: 100px;
+    Height: 100px;
+    Background: #d9163d;
+    animation-name: movebox-b;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    /*animation-delay: 1s;*/
+    }
+
+
+    @keyframes movebox-b{
+        0%{
+            transform: translateX(0px) translateY(0px);
+        }
+        25%{
+            transform: translateX(0px) translateY(500px);
+        }
+        50%{
+            transform: translateX(1000px) translateY(500px);
+        }
+        75%{
+            transform: translateX(1000px) translateY(0px);
+        }
+        100%{
+            transform: translateX(0px) translateY(0px);
+        }
+    }
